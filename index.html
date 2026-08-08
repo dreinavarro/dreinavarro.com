@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Andrei Navarro — AI Transformation &amp; Fluency Consultant</title>
-<meta name="description" content="Andrei Navarro, MBA — AI Transformation &amp; Fluency Consultant, Technology Leader, and Educator. Helping leadership and operating teams adopt AI in the way work actually gets done. Metro Manila, Philippines.">
+<title>Andrei Navarro — AI Fluency &amp; Transformation Consultant</title>
+<meta name="description" content="Andrei Navarro, MBA — AI Fluency &amp; Transformation Consultant, Technology Leader, and Educator. Helping leadership and operating teams adopt AI in the way work actually gets done. Metro Manila, Philippines.">
 <link rel="stylesheet" href="styles.css">
 <style>
   html { scroll-behavior: smooth; }
@@ -23,7 +23,11 @@
   .talk-link { color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-accent-300); padding-bottom: 3px; }
   .talk-link:hover { color: var(--color-accent-700); border-bottom-color: var(--color-accent); }
 
+  /* keep anchor targets clear of the sticky nav, which only exists at >=768px */
+  @media (min-width: 768px) { html { scroll-padding-top: 76px; } }
   @media (max-width: 767px) { .nav { display: none; } }
+
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
   @page { margin: 15mm 14mm; }
   @media print {
@@ -69,25 +73,25 @@
     </div>
   </header>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <section id="profile" style="padding: var(--sect, 56px) 0;">
-    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Profile</span>
+    <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Profile</h2>
     <div style="columns: 330px 2; column-gap: 56px; max-width: 92ch;">
       <p style="font-size: 15.5px; line-height: 28px; margin: 0 0 28px; text-align: justify; hyphens: auto; hyphenate-limit-chars: 6 3 3;">I help leadership teams and operating teams adopt AI in the way work actually gets done. My work focuses on AI fluency, workflow redesign, and practical transformation, helping teams move beyond curiosity and tool experimentation into repeatable AI-assisted habits across operations, product, engineering, sales, and management.</p>
       <p style="font-size: 15.5px; line-height: 28px; margin: 0; text-align: justify; hyphens: auto; hyphenate-limit-chars: 6 3 3;">My approach is grounded in real operating experience. As CTO of Booky, I led technology strategy and engineering for a Philippine F&amp;B tech platform, then drove an end-to-end AI transformation of how the company approached product delivery, technical execution, and day-to-day work. That shaped how I consult: AI adoption succeeds when it's tied to real workflows, clear quality standards, and building the capability of existing teams, not when it's treated as a tool rollout or a one-time training session.</p>
     </div>
   </section>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <section id="experience" style="padding: var(--sect, 56px) 0 calc(var(--sect, 56px) - 12px);">
-    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 30px;">Professional experience</span>
+    <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 30px;">Professional experience</h2>
 
     <article data-entry style="display: flex; flex-wrap: wrap; gap: 10px 44px; padding-bottom: var(--entry-gap, 40px);">
       <p style="flex: 0 0 190px; font-size: 13px; line-height: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 5px 0 0;">Aug 2026 – Present</p>
       <div style="flex: 1 1 340px; min-width: 0;">
-        <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">Founder &amp; CEO</h2>
+        <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">Founder &amp; CEO</h3>
         <p style="font-size: 15px; line-height: 22px; margin: 0 0 16px; color: var(--color-accent-700);"><a class="talk-link" href="https://runmettle.com" target="_blank" rel="noopener">Mettle</a></p>
         <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 64ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Founded an AI operations consultancy helping institutions adopt AI across their operations, from assessment through hands-on delivery and governance.</p>
         <ul class="bullets">
@@ -99,12 +103,12 @@
       </div>
     </article>
 
-    <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+    <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
     <article data-entry style="display: flex; flex-wrap: wrap; gap: 10px 44px; padding: var(--entry-gap, 40px) 0;">
       <p style="flex: 0 0 190px; font-size: 13px; line-height: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 5px 0 0;">Mar 2012 – Mar 2015<br>Jun 2025 – Present</p>
       <div style="flex: 1 1 340px; min-width: 0;">
-        <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">Lecturer</h2>
+        <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">Lecturer</h3>
         <p style="font-size: 15px; line-height: 22px; margin: 0 0 16px; color: var(--color-accent-700);"><a class="talk-link" href="https://www.ateneo.edu" target="_blank" rel="noopener">Ateneo de Manila University</a></p>
         <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 64ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Deliver advanced Information Systems and software development curriculum to undergraduates.</p>
         <ul class="bullets">
@@ -114,12 +118,12 @@
       </div>
     </article>
 
-    <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+    <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
     <article data-entry style="display: flex; flex-wrap: wrap; gap: 10px 44px; padding: var(--entry-gap, 40px) 0;">
       <p style="flex: 0 0 190px; font-size: 13px; line-height: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 5px 0 0;">Mar 2026 – Present</p>
       <div style="flex: 1 1 340px; min-width: 0;">
-        <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">AI &amp; Technical Adviser</h2>
+        <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">AI &amp; Technical Adviser</h3>
         <p style="font-size: 15px; line-height: 22px; margin: 0 0 16px; color: var(--color-accent-700);"><a class="talk-link" href="https://storysellersystems.com" target="_blank" rel="noopener">Storyseller Systems</a></p>
         <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 64ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Advise a Philippine data analytics and custom-systems company serving SMEs.</p>
         <ul class="bullets">
@@ -129,12 +133,12 @@
       </div>
     </article>
 
-    <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+    <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
     <article data-entry style="display: flex; flex-wrap: wrap; gap: 10px 44px; padding: var(--entry-gap, 40px) 0 0;">
       <p style="flex: 0 0 190px; font-size: 13px; line-height: 22px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 5px 0 0;">Oct 2011 – Jul 2026</p>
       <div style="flex: 1 1 340px; min-width: 0;">
-        <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">Chief Technology Officer</h2>
+        <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 27px; line-height: 1.2; letter-spacing: -0.006em; margin: 0 0 6px;">Chief Technology Officer</h3>
         <p style="font-size: 15px; line-height: 22px; margin: 0 0 16px; color: var(--color-accent-700);"><a class="talk-link" href="https://booky.ph" target="_blank" rel="noopener">Booky</a></p>
         <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 64ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Technology strategy, engineering, data, and AI transformation for a Philippine F&amp;B technology platform serving consumers, merchants, and strategic partners.</p>
         <ul class="bullets">
@@ -148,10 +152,10 @@
     </article>
   </section>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <section style="padding: var(--sect, 56px) 0;">
-    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Earlier experience</span>
+    <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Earlier experience</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 56px; max-width: 92ch;">
       <div data-row style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="font-size: 15.5px; line-height: 24px; margin: 0;">Senior Ruby on Rails Developer<span style="color: color-mix(in srgb, var(--color-text) 55%, transparent);">, Proudcloud</span></p>
@@ -180,10 +184,10 @@
     </div>
   </section>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <section id="education" style="padding: var(--sect, 56px) 0;">
-    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 30px;">Education</span>
+    <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 30px;">Education</h2>
     <div style="display: flex; flex-direction: column; gap: 26px;">
       <div data-row style="display: flex; flex-wrap: wrap; gap: 6px 44px;">
         <p style="flex: 0 0 190px; font-size: 13px; line-height: 26px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 0;">2023 – 2026</p>
@@ -209,10 +213,10 @@
     </div>
   </section>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <section id="talks" style="padding: var(--sect, 56px) 0;">
-    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 30px;">Interviews, Talks &amp; Recognition</span>
+    <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 30px;">Interviews, Talks &amp; Recognition</h2>
     <div style="display: flex; flex-direction: column;">
       <article data-row style="display: flex; flex-wrap: wrap; gap: 6px 44px; padding: 0 0 26px; border-bottom: 1px solid var(--color-divider);">
         <p style="flex: 0 0 190px; font-size: 13px; line-height: 26px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 0;">2026</p>
@@ -245,16 +249,17 @@
     </div>
   </section>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <section style="padding: var(--sect, 56px) 0;">
-    <span style="display: block; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Publications</span>
+    <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Publications</h2>
     <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 78ch; padding-left: 26px; text-indent: -26px; color: color-mix(in srgb, var(--color-text) 88%, transparent);">Trono, E. M., Guico, M. L., Labuguen, R., Navarro, A., Libatique, N. J., &amp; Tangonan, G. (2014). <a class="talk-link" href="https://archium.ateneo.edu/ecce-faculty-pubs/47" target="_blank" rel="noopener">Design and development of an integrated web-based system for tropical rainfall monitoring</a>. <em>Procedia Environmental Sciences, 20,</em> 305–314.</p>
   </section>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <section id="contact" style="padding: var(--sect, 56px) 0;">
+    <h2 class="sr-only">Contact</h2>
     <p style="font-size: 15.5px; line-height: 28px; margin: 0 0 30px; max-width: 58ch; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Available for AI transformation engagements, team training, and advisory work — in Metro Manila or remote.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 12px;">
       <a class="btn btn-primary" href="mailto:contact@dreinavarro.com">
@@ -268,7 +273,7 @@
     </div>
   </section>
 
-  <hr style="height: 1px; border: 0; margin: 0; background: var(--color-divider);">
+  <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
   <footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; padding: 26px 0 44px; font-size: 13px; line-height: 26px; color: color-mix(in srgb, var(--color-text) 62%, transparent);">
     <span>Andrei Navarro · Metro Manila, Philippines</span>
