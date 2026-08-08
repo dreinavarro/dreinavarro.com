@@ -23,6 +23,10 @@
   .talk-link { color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-accent-300); padding-bottom: 3px; }
   .talk-link:hover { color: var(--color-accent-700); border-bottom-color: var(--color-accent); }
 
+  /* long titles wrap within their own column instead of pushing the year to its own line */
+  .earlier-grid [data-row] > p:first-child { flex: 0 1 auto; min-width: 0; }
+  .earlier-grid [data-row] > p:last-child { flex: 0 0 auto; white-space: nowrap; }
+
   /* keep anchor targets clear of the sticky nav, which only exists at >=768px */
   @media (min-width: 768px) { html { scroll-padding-top: 76px; } }
   @media (max-width: 767px) { .nav { display: none; } }
@@ -156,28 +160,28 @@
 
   <section style="padding: var(--sect, 56px) 0;">
     <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Earlier experience</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 56px; max-width: 92ch;">
-      <div data-row style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
+    <div class="earlier-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 56px; max-width: 92ch;">
+      <div data-row style="display: flex; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="font-size: 15.5px; line-height: 24px; margin: 0;">Senior Ruby on Rails Developer<span style="color: color-mix(in srgb, var(--color-text) 55%, transparent);">, Proudcloud</span></p>
         <p style="font-size: 13px; line-height: 24px; margin: 0; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent);">2011</p>
       </div>
-      <div data-row style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
+      <div data-row style="display: flex; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="font-size: 15.5px; line-height: 24px; margin: 0;">Head of Engineering<span style="color: color-mix(in srgb, var(--color-text) 55%, transparent);">, Connected Life Labs</span></p>
         <p style="font-size: 13px; line-height: 24px; margin: 0; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent);">2009 – 2011</p>
       </div>
-      <div data-row style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
+      <div data-row style="display: flex; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="font-size: 15.5px; line-height: 24px; margin: 0;">Senior Technology Developer<span style="color: color-mix(in srgb, var(--color-text) 55%, transparent);">, Halo Nine</span></p>
         <p style="font-size: 13px; line-height: 24px; margin: 0; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent);">2008</p>
       </div>
-      <div data-row style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
+      <div data-row style="display: flex; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="font-size: 15.5px; line-height: 24px; margin: 0;">Consultant<span style="color: color-mix(in srgb, var(--color-text) 55%, transparent);">, Metrify Inc., Los Angeles</span></p>
         <p style="font-size: 13px; line-height: 24px; margin: 0; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent);">2007 – 2008</p>
       </div>
-      <div data-row style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
+      <div data-row style="display: flex; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="font-size: 15.5px; line-height: 24px; margin: 0;">Senior Developer<span style="color: color-mix(in srgb, var(--color-text) 55%, transparent);">, Expitrans Inc.</span></p>
         <p style="font-size: 13px; line-height: 24px; margin: 0; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent);">2006 – 2007</p>
       </div>
-      <div data-row style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
+      <div data-row style="display: flex; justify-content: space-between; gap: 4px 20px; padding: 13px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="font-size: 15.5px; line-height: 24px; margin: 0;">Web Developer<span style="color: color-mix(in srgb, var(--color-text) 55%, transparent);">, FBM Software</span></p>
         <p style="font-size: 13px; line-height: 24px; margin: 0; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent);">2005 – 2006</p>
       </div>
