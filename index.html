@@ -27,11 +27,25 @@
         "addressLocality": "Metro Manila",
         "addressCountry": "PH"
       },
-      "worksFor": { "@id": "https://runmettle.com/#organization" },
+      "worksFor": {
+        "@id": "https://runmettle.com/#organization"
+      },
       "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "The University of Western Australia", "sameAs": "https://www.uwa.edu.au" },
-        { "@type": "CollegeOrUniversity", "name": "Asian Institute of Management", "sameAs": "https://www.aim.edu" },
-        { "@type": "CollegeOrUniversity", "name": "Ateneo de Manila University", "sameAs": "https://www.ateneo.edu" }
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "The University of Western Australia",
+          "sameAs": "https://www.uwa.edu.au"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Asian Institute of Management",
+          "sameAs": "https://www.aim.edu"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Ateneo de Manila University",
+          "sameAs": "https://www.ateneo.edu"
+        }
       ],
       "knowsAbout": [
         "AI transformation",
@@ -40,14 +54,88 @@
         "Engineering leadership"
       ],
       "sameAs": [
-        "https://www.linkedin.com/in/dreinavarro",
-        "https://runmettle.com",
-        "https://www.ortusclub.com/blog/executive-chats/cto-chats-with-andrei-navarro-cto-and-co-founder-book/",
-        "https://creators.spotify.com/pod/profile/hustleshare/episodes/Andrei-Navarro---The-Hustle-Of-A-Tech-Co-Founder-e3jp3s",
-        "https://www.youtube.com/watch?v=XSN9o7z6_W8",
-        "https://www.youtube.com/watch?v=0GxuUsFn1mM",
-        "https://archium.ateneo.edu/ecce-faculty-pubs/47"
+        "https://www.linkedin.com/in/dreinavarro"
+      ],
+      "subjectOf": [
+        {
+          "@type": "Article",
+          "name": "CTO Chats with Andrei Navarro",
+          "url": "https://www.ortusclub.com/blog/executive-chats/cto-chats-with-andrei-navarro-cto-and-co-founder-book/",
+          "datePublished": "2026",
+          "publisher": {
+            "@type": "Organization",
+            "name": "The Ortus Club"
+          }
+        },
+        {
+          "@type": "PodcastEpisode",
+          "name": "Andrei Navarro - The Hustle Of A Tech Co-Founder",
+          "url": "https://creators.spotify.com/pod/profile/hustleshare/episodes/Andrei-Navarro---The-Hustle-Of-A-Tech-Co-Founder-e3jp3s",
+          "datePublished": "2019",
+          "partOfSeries": {
+            "@type": "PodcastSeries",
+            "name": "Hustleshare"
+          }
+        },
+        {
+          "@type": "VideoObject",
+          "name": "IT Career Talk: YoungCTO (Chief Technology Officer) Andrei Navarro",
+          "description": "On the evolving role of a CTO, engineering management, hiring for demonstrated skill, and building through iteration.",
+          "url": "https://www.youtube.com/watch?v=0GxuUsFn1mM",
+          "thumbnailUrl": "https://i.ytimg.com/vi/0GxuUsFn1mM/hqdefault.jpg",
+          "uploadDate": "2021"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Yahoo! Hack Day 2008",
+          "description": "Featured presenting an early natural-language interface to Yahoo's APIs at Yahoo's Open Hack Day in Sunnyvale.",
+          "url": "https://www.youtube.com/watch?v=XSN9o7z6_W8",
+          "thumbnailUrl": "https://i.ytimg.com/vi/XSN9o7z6_W8/hqdefault.jpg",
+          "uploadDate": "2008"
+        }
       ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://archium.ateneo.edu/ecce-faculty-pubs/47#article",
+      "name": "Design and Development of an Integrated Web-based System for Tropical Rainfall Monitoring",
+      "url": "https://archium.ateneo.edu/ecce-faculty-pubs/47",
+      "datePublished": "2014",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Edgar Marko Trono"
+        },
+        {
+          "@type": "Person",
+          "name": "Maria Leonora Guico"
+        },
+        {
+          "@type": "Person",
+          "name": "Rollyn T. Labuguen"
+        },
+        {
+          "@id": "https://dreinavarro.com/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Nathaniel Joseph C. Libatique"
+        },
+        {
+          "@type": "Person",
+          "name": "Gregory L. Tangonan"
+        }
+      ],
+      "pageStart": "305",
+      "pageEnd": "314",
+      "isPartOf": {
+        "@type": "PublicationVolume",
+        "volumeNumber": "20",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Procedia Environmental Sciences"
+        }
+      }
     },
     {
       "@type": "Organization",
@@ -56,13 +144,14 @@
       "url": "https://runmettle.com",
       "description": "AI operations consultancy helping institutions adopt AI across their operations, from assessment through hands-on delivery and governance.",
       "foundingDate": "2026-08",
-      "founder": { "@id": "https://dreinavarro.com/#person" },
+      "founder": {
+        "@id": "https://dreinavarro.com/#person"
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Metro Manila",
         "addressCountry": "PH"
-      },
-      "sameAs": [ "https://runmettle.com" ]
+      }
     }
   ]
 }
@@ -293,7 +382,7 @@
       <article data-row style="display: flex; flex-wrap: wrap; gap: 6px 44px; padding: 26px 0; border-bottom: 1px solid var(--color-divider);">
         <p style="flex: 0 0 190px; font-size: 13px; line-height: 26px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 0;">2021</p>
         <div style="flex: 1 1 340px; min-width: 0;">
-          <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 23px; line-height: 1.3; letter-spacing: -0.005em; margin: 0 0 8px;"><a class="talk-link" href="https://www.youtube.com/watch?v=XSN9o7z6_W8" target="_blank" rel="noopener">YoungCTO — IT Career Talk</a></h3>
+          <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 23px; line-height: 1.3; letter-spacing: -0.005em; margin: 0 0 8px;"><a class="talk-link" href="https://www.youtube.com/watch?v=0GxuUsFn1mM" target="_blank" rel="noopener">YoungCTO — IT Career Talk</a></h3>
           <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 64ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">On the evolving role of a CTO, engineering management, hiring for demonstrated skill, and building through iteration.</p>
         </div>
       </article>
@@ -307,7 +396,7 @@
       <article data-row style="display: flex; flex-wrap: wrap; gap: 6px 44px; padding: 26px 0 0;">
         <p style="flex: 0 0 190px; font-size: 13px; line-height: 26px; letter-spacing: 0.06em; text-transform: uppercase; font-feature-settings: 'tnum' 1; color: color-mix(in srgb, var(--color-text) 58%, transparent); margin: 0;">2008</p>
         <div style="flex: 1 1 340px; min-width: 0;">
-          <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 23px; line-height: 1.3; letter-spacing: -0.005em; margin: 0 0 8px;"><a class="talk-link" href="https://www.youtube.com/watch?v=0GxuUsFn1mM" target="_blank" rel="noopener">Yahoo! Hack Day 2008</a></h3>
+          <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 23px; line-height: 1.3; letter-spacing: -0.005em; margin: 0 0 8px;"><a class="talk-link" href="https://www.youtube.com/watch?v=XSN9o7z6_W8" target="_blank" rel="noopener">Yahoo! Hack Day 2008</a></h3>
           <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 64ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Featured presenting an early natural-language interface to Yahoo's APIs, built as one of the international developers at Yahoo's Open Hack Day in Sunnyvale.</p>
         </div>
       </article>
