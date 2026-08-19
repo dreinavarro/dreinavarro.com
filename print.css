@@ -1,0 +1,132 @@
+/* Print stylesheet — lays the page out as a paper CV instead of a long web page.
+   The document is authored with inline styles, which outrank a stylesheet, so the
+   type and spacing rules below need !important to win the cascade. */
+
+@page { margin: 11mm 13mm; }
+
+body {
+  background: #fff !important;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+[data-noprint] { display: none !important; }
+
+/* the page wrapper carries the spacing scale the rest of the layout reads from */
+.sheet {
+  --entry-gap: 11px !important;
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+.sheet hr { margin: 0 !important; }
+.sheet section { padding: 9px 0 !important; }
+.sheet section > h2 { font-size: 8pt !important; margin: 0 0 9px !important; }
+
+/* links read as plain text on paper */
+.sheet a { color: inherit !important; text-decoration: none !important; border-bottom: 0 !important; }
+
+/* — masthead — */
+
+.sheet > header { padding: 0 0 12px !important; break-inside: avoid; }
+.sheet > header h1 { font-size: 25pt !important; margin: 0 0 4px !important; }
+.sheet > header > p { font-size: 11pt !important; margin: 0 0 7px !important; }
+.sheet > header > div { font-size: 8.5pt !important; gap: 3px 16px !important; }
+.sheet > header svg { width: 10px !important; height: 10px !important; }
+
+/* — profile — */
+
+#profile > div { columns: 2 !important; column-gap: 26px !important; max-width: none !important; }
+#profile p { font-size: 9pt !important; line-height: 1.45 !important; margin: 0 0 7px !important; }
+
+/* — experience, education, talks: shared entry shape — */
+
+/* Short rows stay whole. Tall experience entries have to be able to split, or a
+   long one jumps wholly to the next sheet and strands a third of a page. Chrome
+   will not fragment a flex container, so entries become block + float for print;
+   a role heading is still never left behind on its own. */
+[data-row] { break-inside: avoid; }
+
+[data-entry] {
+  display: block !important;
+  break-inside: auto;
+}
+[data-entry] > p:first-child {
+  float: left !important;
+  width: 104pt !important;
+}
+[data-entry] > div { margin-left: 124pt !important; }
+[data-entry]::after { content: ""; display: block; clear: both; }
+[data-entry] h3, [data-entry] h3 + p { break-after: avoid; }
+
+[data-entry] > p:first-child,
+#education [data-row] > p:first-child,
+#talks [data-row] > p:first-child {
+  flex: 0 0 104pt !important;
+  font-size: 7.5pt !important;
+  font-feature-settings: 'tnum' 1 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.02em !important;
+  margin: 3px 0 0 !important;
+}
+
+[data-entry] h3 { font-size: 13pt !important; margin: 0 0 2px !important; }
+[data-entry] h3 + p { font-size: 9pt !important; line-height: 1.4 !important; margin: 0 0 5px !important; }
+[data-entry] h3 + p + p { font-size: 9pt !important; line-height: 1.45 !important; max-width: none !important; }
+
+.bullets { margin: 5px 0 0 !important; gap: 2px !important; max-width: none !important; }
+.bullets li { font-size: 9pt !important; line-height: 1.45 !important; padding-left: 12pt !important; }
+.bullets li::before { font-size: 8pt !important; line-height: 1.45 !important; }
+
+/* — earlier experience — */
+
+.earlier-grid { gap: 0 30px !important; max-width: none !important; }
+.earlier-grid [data-row] { padding: 4px 0 !important; }
+.earlier-grid p { font-size: 9pt !important; line-height: 1.4 !important; }
+.earlier-grid [data-row] > p:last-child { font-size: 8pt !important; }
+
+/* — education — */
+
+#education > div { gap: 7px !important; }
+#education h3 { font-size: 11pt !important; margin: 0 0 1px !important; }
+#education [data-row] > div > p { font-size: 8.5pt !important; line-height: 1.4 !important; }
+
+/* — interviews, talks & recognition — */
+
+#talks [data-row] { padding: 5px 0 !important; }
+#talks [data-row]:first-child { padding-top: 0 !important; }
+#talks h3 { font-size: 11pt !important; margin: 0 0 3px !important; }
+#talks [data-row] > div > p { font-size: 8.5pt !important; line-height: 1.45 !important; max-width: none !important; }
+
+/* — publications — */
+
+#publications p { font-size: 8.5pt !important; line-height: 1.45 !important; max-width: none !important; break-inside: avoid; }
+
+/* — contact: buttons become plain text, and the URLs behind the labels are spelled out — */
+
+#contact p { font-size: 9pt !important; line-height: 1.45 !important; margin: 0 0 7px !important; max-width: none !important; }
+#contact p a::after { content: " (runmettle.com)"; }
+
+#contact > div { gap: 0 14px !important; }
+#contact .btn {
+  display: inline !important;
+  border: 0 !important;
+  padding: 0 !important;
+  font-family: var(--font-body) !important;
+  font-size: 9pt !important;
+  font-weight: 400 !important;
+}
+#contact .btn svg { display: none !important; }
+/* replace the "LinkedIn" label with the address it points at */
+#contact .btn[href*="linkedin"] { font-size: 0 !important; }
+#contact .btn[href*="linkedin"]::after { content: "linkedin.com/in/dreinavarro"; font-size: 9pt !important; }
+
+/* — footer — */
+
+.sheet > footer { padding: 6px 0 0 !important; font-size: 7.5pt !important; line-height: 1.4 !important; }
+
+/* — pagination — */
+
+h1, h2, h3 { break-after: avoid; }
+p, li { orphans: 2; widows: 2; }
+#contact { break-inside: avoid; }

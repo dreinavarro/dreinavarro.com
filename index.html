@@ -6,6 +6,7 @@
 <title>Andrei Navarro · Technology Leader and Educator</title>
 <meta name="description" content="Andrei Navarro, MBA. Technology leader and educator in Metro Manila. Founder of Mettle, an AI operations outfit for Philippine businesses. Two decades building software and leading the teams that ship it.">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="print.css" media="print">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -183,13 +184,6 @@
 
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
-  @page { margin: 15mm 14mm; }
-  @media print {
-    [data-noprint] { display: none !important; }
-    body { background: #fff; }
-    [data-entry], [data-row] { break-inside: avoid; }
-    h1, h2, h3 { break-after: avoid; }
-  }
 </style>
 </head>
 <body>
@@ -206,7 +200,7 @@
   </button>
 </nav>
 
-<div style="--sect: 56px; --entry-gap: 40px; max-width: 1080px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px);">
+<div class="sheet" style="--sect: 56px; --entry-gap: 40px; max-width: 1080px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px);">
 
   <header style="padding: clamp(44px, 7vw, 96px) 0 var(--sect, 56px);">
     <h1 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(44px, 7.2vw, 84px); line-height: 1.06; letter-spacing: -0.012em; margin: 0 0 22px; margin-left: -0.042em;">Andrei Navarro<span style="color: var(--color-neutral-600);">, MBA</span></h1>
@@ -414,7 +408,7 @@
 
   <hr style="height: 0; border: 0; border-top: 1px solid var(--color-divider); margin: 0;">
 
-  <section style="padding: var(--sect, 56px) 0;">
+  <section id="publications" style="padding: var(--sect, 56px) 0;">
     <h2 style="display: block; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); font-feature-settings: 'tnum' 1; margin: 0 0 26px;">Publications</h2>
     <p style="font-size: 15.5px; line-height: 28px; margin: 0; max-width: 78ch; padding-left: 26px; text-indent: -26px; color: color-mix(in srgb, var(--color-text) 88%, transparent);">Trono, E. M., Guico, M. L., Labuguen, R., Navarro, A., Libatique, N. J., &amp; Tangonan, G. (2014). <a class="talk-link" href="https://archium.ateneo.edu/ecce-faculty-pubs/47" target="_blank" rel="noopener">Design and development of an integrated web-based system for tropical rainfall monitoring</a>. <em>Procedia Environmental Sciences, 20,</em> 305–314.</p>
   </section>
