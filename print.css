@@ -56,6 +56,8 @@ body {
   width: 104pt !important;
 }
 [data-entry] > div { margin-left: 124pt !important; }
+/* an entry with two terms shows one range per line; tighten the gap for paper */
+[data-entry] > p:first-child span + span { margin-top: 2px !important; }
 [data-entry]::after { content: ""; display: block; clear: both; }
 [data-entry] h3, [data-entry] h3 + p { break-after: avoid; }
 
